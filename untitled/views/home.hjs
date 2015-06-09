@@ -7,7 +7,34 @@
   <body>
     <h1>{{ title }}</h1>
     <div>
-      <h2>欢迎您, {{ name }}</h2>
+      <h2>欢迎您, {{ name }}   {{ date}}</h2>
+    </div>
+
+    <div>
+      <table>
+       <tr>
+          <th scope="col">
+              编号
+          </th>
+          <th scope="col">
+              图片
+          </th>
+          <th scope="col">
+              说明
+          </th>
+          <th scope="col">
+              价格
+          </th>
+        </tr>
+        {{#list}}
+        <tr>
+          <td>{{ id }}</td>
+          <td><img src={{img}} /></td>
+          <td>{{ remarks }}</td>
+          <td>{{ price }}</td>
+        </tr>
+         {{/list}}
+      </table>
     </div>
   </body>
 </html>
