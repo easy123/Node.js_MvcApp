@@ -1,0 +1,7 @@
+<ul>
+     {{#product}}
+        <li>{{name}}</li>
+        <li><img src={{img}} /></li>
+        <li><img src={{desc}} /></li>
+     {{/product}}
+</ul>

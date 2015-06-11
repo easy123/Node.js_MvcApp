@@ -8,7 +8,7 @@
   <body>
      <h1>{{ title }}</h1>
       <div>
-          <form method="post" action="home">
+          <form method="post" action="index">
             用户名<input type="text" name="name" ><br/><br/>
             密&nbsp;&nbsp;&nbsp;码<input type="password" name="password" ><br/><br/>
            <input type="submit" value="登陆" >
